@@ -1,3 +1,15 @@
-server/node_modules
+# root
+.env
+.env.*
+
+# frontend
 client/node_modules
-*.env
+client/build
+
+# backend
+server/node_modules
+
+# logs
+npm-debug.log
+yarn-error.log
+yarn-debug.log
