@@ -1,0 +1,83 @@
+/* Modern appointment form styles for hospital management system */
+.appointment-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  opacity: 0.12;
+  pointer-events: none;
+}
+.appointment-form-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2.5rem 2rem;
+  color: #fff;
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: fadeInUp 1.2s cubic-bezier(.25,.8,.25,1);
+}
+.appointment-form-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(30,60,114,0.18);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.appointment-form-label {
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+.appointment-form-input, .appointment-form-textarea {
+  background: rgba(40,44,52,0.85);
+  color: #fff;
+  border-radius: 0.7rem;
+  border: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(30,60,114,0.12);
+  transition: background 0.3s, color 0.3s;
+}
+.appointment-form-input:focus, .appointment-form-textarea:focus {
+  background: rgba(40,44,52,1);
+  outline: none;
+  color: #ffd700;
+}
+.appointment-form-radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.appointment-form-radio-label {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.appointment-form-submit {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(30,60,114,0.12);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-top: 1.5rem;
+}
+.appointment-form-submit:hover {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  color: #ffd700;
+  box-shadow: 0 4px 16px rgba(30,60,114,0.18);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}

@@ -1,0 +1,54 @@
+/* Enhance base app styles for a modern look */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 16px #2a5298);
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background: rgba(40,44,52,0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2rem 3rem;
+  margin: 2rem 0;
+  color: #fff;
+  font-size: calc(12px + 2vmin);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  animation: fadeInUp 1.2s cubic-bezier(.25,.8,.25,1);
+}
+
+.App-link {
+  color: #ffd700;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.App-link:hover {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}

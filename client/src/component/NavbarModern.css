@@ -1,0 +1,64 @@
+/* Modern, beautiful navbar styles for HMS */
+.hms-navbar {
+  background: linear-gradient(90deg, #2d57a6 0%, #2a5298 100%);
+  box-shadow: 0 4px 24px 0 rgba(30,60,114,0.10);
+  padding: 0.7rem 2rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.hms-navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffd700 !important;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(30,60,114,0.18);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.hms-navbar .navbar-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.hms-navbar .nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  transition: background 0.3s, color 0.3s;
+  text-shadow: 0 2px 8px rgba(30,60,114,0.10);
+}
+.hms-navbar .nav-link:hover, .hms-navbar .nav-link.active {
+  background: #ffd700;
+  color: #1e3c72 !important;
+}
+.hms-navbar .btn, .hms-navbar button {
+  border-radius: 2rem;
+  padding: 0.4rem 1.1rem;
+  font-weight: 600;
+  background: #ffd700;
+  color: #1e3c72;
+  border: none;
+  margin-left: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+.hms-navbar .btn:hover, .hms-navbar button:hover {
+  background: #fff;
+  color: #2a5298;
+}
+@media (max-width: 900px) {
+  .hms-navbar {
+    padding: 0.7rem 0.5rem;
+  }
+  .hms-navbar .navbar-nav {
+    gap: 0.5rem;
+  }
+  .hms-navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
